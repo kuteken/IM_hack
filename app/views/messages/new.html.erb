@@ -1,5 +1,5 @@
 <%= form_tag :action => "create" do %>
-user:<%= text_field_tag 'user' %>
+user:<%= select_tag("user", options_for_select([['くってぃ','kuteken'],['カバ','becyn'],['師匠','hatone'],['ピザ','kyoro353']], Time.now.month ))  %>
 body:<%= text_field_tag 'body' %>
 <%= submit_tag 'post' %>
 <% end %>
